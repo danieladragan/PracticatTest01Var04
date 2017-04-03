@@ -12,6 +12,7 @@ public class PracticalTest01Var04ChooseNumber extends AppCompatActivity {
     private EditText numberEditText;
     private EditText numbervalueEditText;
     private Button playButton;
+    final public static String NUMBER_INTRO = "numberIntro";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +35,9 @@ public class PracticalTest01Var04ChooseNumber extends AppCompatActivity {
 
             switch (view.getId()) {
                 case R.id.play_button:
-                    //leftEditText.setText(String.valueOf(leftNumberOfClicks));
+          //          leftEditText.setText(String.valueOf(leftNumberOfClicks));
                     Intent intent = new Intent(getApplicationContext(), PracticalTest01Var04PlayActivity.class);
-                    //intent.putExtra(numberIntroIndent, numberIntro);
+                    intent.putExtra(NUMBER_INTRO, numberIntro);
                     startActivityForResult(intent, 1);
                     break;
             }
