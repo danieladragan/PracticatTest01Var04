@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="practicaltest01var04.eim.systems.cs.pub.ro.practicaltest01var04.PracticalTest01Var04PlayActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/guess_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="number"
+            android:ems="7"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:saveEnabled="false"
+            android:text="Guess"/>
+
+        <EditText
+            android:id="@+id/number_guess_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:enabled="false"
+            android:ems="7"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:saveEnabled="false"
+            />
+
+        <Button
+            android:id="@+id/generate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/number_guess_edit_text"
+            android:layout_alignEnd="@+id/number_guess_edit_text"
+            android:layout_below="@id/number_value_edit_text"
+            android:gravity="center"
+            android:text="Generate" />
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/generate_button"
+            android:layout_below="@id/generate_button"
+            android:gravity="center"
+            android:text="check" />
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/number_guess_edit_text"
+            android:layout_below="@id/check_button"
+            android:gravity="center"
+            android:text="back" />
+
+    </RelativeLayout>
+</RelativeLayout>
